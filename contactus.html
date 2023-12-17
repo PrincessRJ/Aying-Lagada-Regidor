@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/665ad7d0af.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container1E div form {
+        display: flex;
+        flex-direction: column;
+    }
+/* Reset some default styles */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the container */
+.container1E {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the form container */
+.container1E > div {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+.container1E h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the input fields */
+.form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+#login-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-button:hover {
+    background-color: #45a049;
+}
+
+/* Style the Inquire link */
+.form a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    color: blue;
+}
+
+.form a:hover {
+    color: #555;
+}
+
+</style>
+<body>
+    <header>
+        <i class="fa-solid fa-map-location-dot"></i>
+        <p>4000-4002 W Belvedere Ave., Unit A, Baltimore, MD 21214</p>
+        <i class="fa-solid fa-envelope"></i>
+        <p>Email: Excellentthealthcareprp@gmail.com</p>
+        <i class="fa-solid fa-phone"></i>
+        <p>Phone: 410-304-6544</p>
+    </header>
+    <div class="navigationBar">
+        <img src="images/main-logo-1-229x300.png" alt="Main Logo">
+        <button class="menuButton" onclick="menu()"><i class="fa-solid fa-bars menuicon"></i></button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CAREER</a></li>
+                <li><a href="#">NEWS & RESOURCES</a></li>
+                <li><a href="#">REFERRALS</a></li>
+                <li><a href="#" class="opened">CONTACT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container1E">
+            <div>
+                <h1>Contact Us</h1>
+                
+                <form class="form">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Email">
+                    <input type="number" placeholder="#Mobile_number">
+                    <input type="text" placeholder="Message">
+                    <button type="submit" id="login-button">Login</button>
+                    <a href="inquire.html">Inquire</a>
+                </form>
+            </div>
+        <!-- <div class="text">
+            <h1>We Care Together</h1>
+            <p>Excellent Healthcare and Psychiatric Rehabilitation Program Services Inc. (EHPS) provides integrated services through its Outpatient Mental Health Program offering Psychiatric Rehabilitation Services, Behavioral Health Outpatient, and Addictions Treatment Services.</p>
+            <a href="#">Learn Who We Are &RightArrow;</a>
+        </div>
+        <div class="image1"></div> -->
+    </div>
+    <!-- <div class="maincontainer">
+        <div class="anotherpagelinks">
+            <div>
+                <img src="images/appointment.png" alt="appointment">
+                <h1>Set an Appointment</h1>
+                <p>Book an appointment with one of our professionals today!</p>
+                <a href="#">Click Here &RightArrow;</a>
+            </div>
+            <div>
+                <img src="images/referalls.png" alt="referrals">
+                <h1>Send Your Referalls</h1>
+                <p>&nbsp;</p>
+                <a href="#">Click Here &RightArrow;</a>
+            </div>
+            <div>
+                <img src="images/insurance.png" alt="insurance">
+                <h1>Insurance Accepted</h1>
+                <p>We accept different health insurance plans as payment.</p>
+                <a href="#">Click Here &RightArrow;</a>
+            </div>
+        </div>
+        <div class="introduction">
+            <div class="image2"></div>
+            <div class="text">
+                <h1>INTRODUCING</h1>
+                <h2>Excellent</h2>
+                <h3>Healthcare & PRP Services, Inc.</h3>
+                <p class="bolder">Thank you for visiting our website. Feel free to browse and learn more about us.</p>
+                <p>We take a collabrorative approach to our healthcare services. With this, our clients can become more involved in managing and improving thier health. We also utilize person- centered services to make sure that the services we offer are suitable to their overall needs</p>
+            </div>
+        </div>
+        <div class="services">
+            <h1>Services We Offer</h1>
+            <p class="center">We offer a wide array of behavioral health services to cater to our clients' different needs.</p>
+            <div class="options">
+                <div>
+                    <img src="images/image1.png" alt="image1">
+                    <h1>Behavioral Health Care</h1>
+                    <p>Supporting you as you journey towards a healthier life.</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+                <div>
+                    <img src="images/image2.jpg" alt="image2">
+                    <h1>Substance Abuse Treatment</h1>
+                    <p>Treatment services that can help you commit to sobriety.</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+                <div>
+                    <img src="images/image3.jpg" alt="image3">
+                    <h1>Psychiatric Rehabilitation Program</h1>
+                    <p>Training and activities that help you maintain independence.</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+                <div>
+                    <img src="images/image4.png" alt="image4">
+                    <h1>Assertive Community Treatment</h1>
+                    <p>Comprehensive treatment to address behavioral health issues.</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+                <div>
+                    <img src="images/image5.png" alt="image5">
+                    <h1>Detoxification / Withrawal Management</h1>
+                    <p>Treatment services for health withdrawal management.</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+                <div>
+                    <img src="images/image6.jpg" alt="image6">
+                    <h1>View Services</h1>
+                    <p>Learn more about the different servcies we offer..</p>
+                    <a href="#">Click Here &rightarrow;</a>
+                </div>
+            </div>
+        </div>
+        <div class="visionandmission">
+            <div>
+                <h1>Vision & Mission Statement</h1>
+                <p>To provide patient-centered healthcare with excellence in quality service and easy access to healthcare services.</p>
+                <p>To provide services focusing on integrated care, primary and behavioral services to better address the needs of individuals with meantal health and stubstance use conditions.</p>
+                <a href="#">About Us &RightArrow;</a>
+            </div>
+            <div></div>
+        </div>
+        <div class="gallery">
+            <h1>Our Photo Gallery</h1>
+            <p>Check out some pictures of our faciltiy, behavioral health staff, and other activites that promote clients' health enhancment. <a href="#">[ VIEW MORE PHOTOS ]</a></p>
+            <div id="photos">
+                <div>
+                    <img src="images/gallery1.PNG" alt="gallery1">
+                    <img src="images/gallery2.PNG" alt="gallery2">
+                </div>
+                <div>
+                    <img src="images/gallery3.PNG" alt="gallery3">
+                    <img src="images/gallery4.PNG" alt="gallery4">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="lastcontainer">
+        <!-- <div class="message">
+            <div>
+                <h1>Send Us a Message</h1>
+                <p>Do you have more questions? Please let us know by dropping your messages here.</p>
+            </div>
+            <form action="get">
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name*" required>
+                <input type="text" name="emailaddress" id="emailaddress" placeholder="Email Address*" required>
+                <input type="text" name="messages" id="messages" placeholder="Message(s)" required>
+                <button>Submit &RightArrow;</button>
+            </form>
+        </div> -->
+        <div class="contactandnav">
+            <div>
+                <h1>Contact Us</h1>
+                <div class="one">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>410-304-6544</p>
+                </div>
+                <div class="two">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div>
+                        <p>400-4002 W Belvedere Ave., Unit A Baltimore, MD 21215</p>
+                        <p>Phone: 410-304-6544</p>
+                        <p>Email: excellenthealthcareprp@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigate">
+                <h1>Navigation</h1>
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">HOME</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">ABOUT US</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">SERVICES</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">CAREER</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">NEWS & RESOURCES</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">REFERRALS</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#" class="opened">CONTACT US</a></li>
+                        <li><i class="fa-solid fa-angles-right less_than"></i><a href="#">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <img src="images/award.png" alt="award">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.5325725886805!2d-76.68528182346158!3d39.344174620218205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81af975f83c15%3A0xb034db01659c3814!2s4002%20W%20Belvedere%20Ave%2C%20Baltimore%2C%20MD%2021215%2C%20USA!5e0!3m2!1sen!2sph!4v1702048769013!5m2!1sen!2sph" width="75%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer>
+            <ul>
+                <p>&copy; Copyright 2021 - 2023</p>
+                <li><a href="#">Excellent Healthcare & PRP Services, Inc.</a></li>
+                <li>Designed by Proweaver</li>
+            </ul>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var x = document.getElementById("navbar");
+
+        function menu() {
+            var state = 1;
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } 
+            else {
+                x.style.display = "flex";
+            }
+        }
+
+        function myFunction(y) {
+            if (y.matches) { // If media query matches
+                x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+        }
+
+        // Create a MediaQueryList object
+        var y = window.matchMedia("(max-width: 767px)")
+
+        // Call listener function at run time
+        myFunction(y);
+
+        // Attach listener function on state changes
+        y.addEventListener("change", function() {
+        myFunction(y);
+        });
+
+    </script>
+</body>
+</html>
